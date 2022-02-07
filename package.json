@@ -1,0 +1,16 @@
+{
+  "name": "nomic-foundation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "php -S localhost:8000",
+    "watch-scss": "sass --watch styles/stylesheet.scss public/stylesheet.css"
+  },
+  "author": "Guido La Rosa",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}

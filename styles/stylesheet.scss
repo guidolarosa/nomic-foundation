@@ -1,0 +1,53 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'coming-soon.scss';
+@import 'fonts.scss';
+@import 'homepage.scss';
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+body {
+    background: $background;
+    color: $font-color;
+    font-family: $font-stack;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.button-link {
+    padding: 0 38.5px;
+    border: 1px solid rgba(241, 233, 239, 1);
+    display: inline-block;
+    background: linear-gradient(50deg, rgba(27, 24, 45, 1), rgba(7, 2, 13, 1));
+    line-height: 58px;
+    height: 58px;
+    border-radius: 100px;
+    letter-spacing: 3px;
+    font-size: 14px;
+    @media screen and (max-width: $mobile-breakpoint) {
+        font-size: 12px;
+        height: 41px;
+        line-height: 41px;
+    }
+}
+
+.navigation {
+    max-width: 1030px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    @media screen and (max-width: $mobile-breakpoint) {
+        padding: 45px 24px;
+        .logo {
+            width: 122px;
+        }
+        .button-link {
+            display: none;
+        }
+    }
+}

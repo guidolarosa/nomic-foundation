@@ -1,0 +1,23 @@
+#coming-soong {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .texture-background {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            background-image: url('./../src/img/coming-soon-texture.svg');
+            background-position: left;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        img {
+            position: relative;
+            z-index: 2;
+            @media screen and (max-width: 980px) {
+                width: 100%;
+            }
+        }
+    }
+}

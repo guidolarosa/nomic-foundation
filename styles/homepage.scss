@@ -1,0 +1,64 @@
+#homepage {
+    .hero {
+        width: 740px;
+        margin: 67px auto;
+        position: relative;
+        h1 {
+            font-size: 68px;
+            line-height: 102px;
+            font-weight: 300;
+            background: -webkit-linear-gradient(76.31deg, #C3C4C3 2.01%, #F3F3F3 99.02%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 1;
+        }
+        .glow-background {
+            position: absolute;
+            top: -300px;
+            left: -320px;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .social-links {
+            margin-top: 65px;
+            a {
+                margin-right: 42px;
+            }
+        }
+        .hero-footer {
+            margin-top: 162px;
+            display: none;
+        }
+    }
+    @media screen and (max-width: $mobile-breakpoint) {
+        .hero {
+            width: 284px;
+            margin: 0px;
+            margin-left: 65px; 
+            h1 {
+                font-size: 38px;
+                line-height: 57px;
+            }
+            .glow-background {
+                width: 349px;
+                top: 20px;
+                left: -60px;
+            }
+            .social-links {
+                margin-top: 34px;
+                a {
+                    margin-right: 34px;
+                    img {
+                        max-height: 38px;
+                        max-width: 38px;
+
+                    }
+                }
+            }
+            .hero-footer {
+                display: block;
+            }
+        }
+    }
+}
