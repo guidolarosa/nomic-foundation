@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "php -S localhost:8000",
-    "watch-scss": "sass --watch styles/stylesheet.scss public/stylesheet.css"
+    "watch-scss": "sass --watch scss/stylesheet.scss public/stylesheet.css"
   },
   "author": "Guido La Rosa",
   "license": "ISC",
